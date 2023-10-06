@@ -1,0 +1,1 @@
+{"inputs": ["3\n6\nabcdefghijkl\nchef\nworld\ncode\nabcxyzhijkl\nword\n4\nproblem\npoem\nproblem\nproblem\n3\ncontest\ncoolest\nunused"], "outputs": ["10\n50\n4"]}

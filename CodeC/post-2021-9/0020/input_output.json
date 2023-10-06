@@ -1,0 +1,1 @@
+{"inputs": ["3\n10 12 11\n3 5 15\n9 4 13\n", "1\n5 6 7\n", "1\n3 5 6\n", "1\n2 3 4\n", "1\n2 3 4\n", "1\n5 10 5\n"], "outputs": ["TRAIN\nPLANEBUS\nEQUAL\n", "TRAIN\n", "TRAIN\n", "TRAIN\n", "TRAIN\n", "TRAIN\n"]}

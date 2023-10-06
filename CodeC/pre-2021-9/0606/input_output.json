@@ -1,0 +1,1 @@
+{"inputs": ["1\n5\nWarsaw Kiev 120\nMadrid Paris 100\nMunich Warsaw 150\nParis Munich 200\n"], "outputs": ["Madrid Paris 100\nParis Munich 200\nMunich Warsaw 150\nWarsaw Kiev 120\n570\n"]}

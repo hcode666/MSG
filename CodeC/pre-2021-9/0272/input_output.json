@@ -1,0 +1,1 @@
+{"inputs": ["3\ngandhi\nmahatma gandhI\nMohndas KaramChand gandhi"], "outputs": ["Gandhi \nM. Gandhi \nM. K. Gandhi"]}

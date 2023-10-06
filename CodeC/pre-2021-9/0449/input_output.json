@@ -1,0 +1,1 @@
+{"inputs": ["3\n1\nA 1\nB 2\nC 3\n2\nAA 1\nAB 1\nAB 1\nAC 1\nAC 1\nAD 1\n1\nZ 100\nZ 100\nZ 100", "1\n3\nAAA 100\nBBB 200\nCCC 300\nAAA 100\nBBB 200\nCCC 300\nAAA 100\nBBB 200\nCCC 300", "3\n1\nA 1\nB 2\nC 3\n2\nAA 1\nAB 1\nAB 1\nAC 1\nAC 1\nAD 1\n1\nZ 100\nZ 100\nZ 100\n"], "outputs": ["1 2 3\n1 1 2 2\n300", "300 600 900\n", "1 2 3\n1 1 2 2\n300\n"]}

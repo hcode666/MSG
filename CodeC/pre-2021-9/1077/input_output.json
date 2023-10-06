@@ -1,0 +1,1 @@
+{"inputs": ["3\n4\nabab\n5\nacbba\n5\naaaab", "1\n10\nabcdefghij", "1\n1\na\n", "2\n1\na\n3\nabc\n", "3\n1\na\n3\naba\n5\ndcabf", "3\n4\nabab\n5\nacbba\n5\naaaab\n"], "outputs": ["YES\n1\nYES\n1\nNO", "NO\n", "YES\n0\n", "YES\n0\nNO\n", "YES\n0\nYES\n0\nNO\n", "YES\n1\nYES\n1\nNO\n"]}

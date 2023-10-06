@@ -1,0 +1,1 @@
+{"inputs": ["3\nxy\nxyxxy\nyy", "2\nxx\nyyy", "1\nxyxy\n", "1\nxyx\n", "1\nxyxyyx\n", "1\nyxxyyyxyyx\n", "1\nxyxyxy\n", "3\nxy\nxyxxy\nyy\n", "6\nx\nx\nx\nx\nx\nx\n", "1\nx", "3\nxy\nxyxxy\nyy\n"], "outputs": ["1\n2\n0", "0\n0\n", "2\n", "1\n", "3\n", "4\n", "3\n", "1\n2\n0\n", "0\n0\n0\n0\n0\n0\n", "0\n", "1\n2\n0\n"]}

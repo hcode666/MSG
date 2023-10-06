@@ -1,0 +1,1 @@
+{"inputs": ["4\nab\naa\naA\nAAbaz"], "outputs": ["2\n1\n2\n60"]}

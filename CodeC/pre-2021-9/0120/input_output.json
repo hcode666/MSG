@@ -1,0 +1,1 @@
+{"inputs": ["act\n2\ncat\ndog", "a\n3\ndog\ncat\nduck", "pqr\n4\nabc\ndef\nghi\njkl", "qwertyuiopasdfghjklzxcvbnm\n5\nqwe\nrty\nuio\np1q2w3e4r5t6y\nasd", "dghp\n2\nhello\nworld", "a\n3\na\naa\naaa"], "outputs": ["Yes\nNo", "No\nNo\nNo\n", "No\nNo\nNo\nNo", "Yes\nNo\nYes\nNo\nNo\n", "No\nNo\n", "Yes\nYes\nYes\n"]}

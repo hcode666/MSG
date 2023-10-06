@@ -1,0 +1,50 @@
+You are given an array A consisting of N positive integers.
+
+Suppose F(B,X) gives the minimum positive integer Y such that:
+X divides Y \cdot B_{i} for all (1 ≤ i ≤ |B|).
+
+Find the value of F(A,A_{i}) for all (1 ≤ i ≤ N). 
+
+------ Input Format ------ 
+
+- The first line of input contains a single integer T, denoting the number of test cases.
+- Each test case consists of two lines of input.
+- The first line of each test case contains an integer N — the length of the array A.
+- The second line of each test case contains N space-separated integers A_{1},A_{2},\ldots,A_{N} representing the array A.
+
+------ Output Format ------ 
+
+For each test case, print N space-separated integers where the i^{th} integer denotes the value F(A,A_{i}). 
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 10^{5}$
+$1 ≤ N ≤ 5 \cdot 10^{5}$
+$1 ≤ A_{i} ≤ 10^{6}$
+- The sum of $N$ over all test cases won't exceed $5 \cdot 10^{5}$.
+
+----- Sample Input 1 ------ 
+2
+2
+1 2
+3
+2 2 2
+
+----- Sample Output 1 ------ 
+1 2
+1 1 1
+
+----- explanation 1 ------ 
+Test case $1$: Given $A = [1, 2]$
+- $F(A, A_{1}) = F(A, 1) = 1$: Here $X = 1$ and $Y = 1$ as $X = 1$ divides both $Y\cdot A_{1} = 1$ and $Y\cdot A_{2} = 2$.
+- $F(A, A_{2}) = F(A, 2) = 2$: Here $X = 2$ and $Y = 2$ as $X = 2$ divides both $Y\cdot A_{1} = 2$ and $Y\cdot A_{2} = 4$.
+
+Note that the values of $Y$ are minimum possible for both $F(A, A_{1})$ and $F(A, A_{2})$.
+
+Test case $2$: Given $A = [2, 2, 2]$
+- $F(A, A_{1}) = F(A, 2) = 1$: Here $X = 2$ and $Y = 1$ as $X = 1$ divides $Y\cdot A_{1} = 2, Y\cdot A_{2} = 2,$ and $Y\cdot A_{3} = 2$.
+- $F(A, A_{2}) = F(A, 2) = 1$: Here $X = 2$ and $Y = 1$ as $X = 1$ divides $Y\cdot A_{1} = 2, Y\cdot A_{2} = 2,$ and $Y\cdot A_{3} = 2$.
+- $F(A, A_{3}) = F(A, 2) = 1$: Here $X = 2$ and $Y = 1$ as $X = 1$ divides $Y\cdot A_{1} = 2, Y\cdot A_{2} = 2,$ and $Y\cdot A_{3} = 2$.
+
+Note that the values of $Y$ are minimum possible for $F(A, A_{1}), F(A, A_{2}),$ and $F(A, A_{3})$.
+

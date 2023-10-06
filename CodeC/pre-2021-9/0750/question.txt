@@ -1,0 +1,40 @@
+Read problems statements in mandarin chinese, russian and vietnamese as well. 
+
+You are given 2 arrays W =  (W_{1}, W_{2}, .., W_{N}) and C =  (C_{1}, C_{2}, .., C_{N}) with N elements each. A range [l, r] is unique if all the elements C_{l}, C_{l+1}, .., C_{r} are unique (ie. no duplicates). The sum of the range is W_{l} +  W_{l+1} + ... + W_{r}.
+
+You want to find an unique range with the maximum sum possible, and output this sum.
+
+------ Input ------ 
+
+The first line of the input contains an integer T, denoting the number of test cases. The description of each testcase follows.
+The first line of each test case contains a single integer N, denoting the size of the arrays.
+The second line contains N space-separated integers : C_{1}, C_{2}, .., C_{N}.
+The third line contains N space-separated integers : W_{1}, W_{2}, .., W_{N}.
+
+------ Output ------ 
+
+For each testcase, output a single integer in a new line, which should be the maximum possible sum of an unique range.
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 100$
+$1 ≤ N ≤ 1000000$
+$0 ≤ C_{i} < N$
+$0 ≤ W_{i} ≤ 1000000000
+$ $1 ≤ Sum of N over all test cases ≤ 1000000$
+
+------ Subtasks ------ 
+
+$Subtask #1 (30 points): Sum of N over all test cases ≤ 10000$
+$Subtask #2 (70 points): Original constraints$
+
+----- Sample Input 1 ------ 
+1
+5
+0 1 2 0 2
+5 6 7 8 2
+----- Sample Output 1 ------ 
+21
+----- explanation 1 ------ 
+The range [2, 4] is an unique range because (1, 2, 0) has no duplicates. Its sum is 6 + 7 + 8 = 21. This is the maximum possible, and hence is the answer.
+

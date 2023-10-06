@@ -1,0 +1,1 @@
+{"inputs": ["4\nabcd\nabce\nabcdex\nabcde\n3\n3 abcy\n3 abcde\n4 abcde"], "outputs": ["abcd\nabcdex\nabcde"]}

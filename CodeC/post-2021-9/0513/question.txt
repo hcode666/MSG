@@ -1,0 +1,44 @@
+Chef was impressed by an array A of N non-negative integers. But, he was asked to solve the following problem in order to get this array.
+
+Given a non-negative integer k, find the number of pairs (i, j) (1 ≤ i < j ≤ N) such that the following condition holds true:  
+(A_{i} | A_{j}) + (A_{i} \oplus A_{j}) + (A_{i} \& A_{j}) = k + A_{j}, where 
+(A_{i} | A_{j}) denotes [Bitwise OR] operation,
+(A_{i} \oplus A_{j}) denotes [Bitwise XOR] operation,
+(A_{i} \& A_{j}) denotes [Bitwise AND] operation.
+
+You, being Chef's friend, help him get this array by solving the above problem.
+
+------ Input Format ------ 
+
+- The first line contains an integer T, the number of test cases.
+- The first line of each test case contains two space-separated integers N and k, the number of integers in the array A and the non-negative integer k respectively.
+- The next line contains N space-separated non-negative integers A_{1},A_{2}, \ldots, A_{N}, the elements of the array A.
+
+------ Output Format ------ 
+
+For each test case, print a single line containing the number of pairs satisfying the mentioned condition.
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 200$
+$1 ≤ N ≤ 10^{5}$
+$0 ≤ k ≤ 10^{18}$
+$0 ≤ A_{i} ≤ 10^{18}$
+- Sum of $N$ over all test cases does not exceed $3 \cdot 10^{5}$.
+
+----- Sample Input 1 ------ 
+2
+1 8
+7
+3 8
+1 6 4
+----- Sample Output 1 ------ 
+0
+2
+----- explanation 1 ------ 
+Test case $1$: The input array contains only a single integer. Thus, no pairs are possible.
+
+Test case $2$: There are two pairs satisfying the condition -
+- $(i,j) = (1, 2)$: $A_{1} = 1$ and $A_{2} = 6$. Thus, $(1|6) + (1\oplus 6) + (1$ $\&$ $6) = 7 + 7 + 0 = 14$. Also, $k+A_{2} = 8 + 6 = 14$.
+- $(i,j) = (2, 3)$: $A_{2} = 6$ and $A_{3} = 4$. Thus, $(6|4) + (6\oplus 4) + (6$ $\&$ $4) = 6 + 2 + 4 = 12$. Also, $k+A_{3} = 8 + 4 = 12$.
+

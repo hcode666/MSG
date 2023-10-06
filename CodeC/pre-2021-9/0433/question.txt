@@ -1,0 +1,75 @@
+Read problems statements in Mandarin Chinese and Russian. 
+Mike is given a matrix A, N and M are numbers of rows and columns respectively. A_{1, 1} is the number in the top left corner. All the numbers in A are non-negative integers. He also has L pairs of integers (i_{k}, j_{k}). His task is to calculate A_{i1}, j_{1} + A_{i2}, j_{2} + ... + A_{iL}, j_{L}.
+
+Unfortunately, Mike forgot if A_{i, j} was a number in the i'th row and j'th column or vice versa, if A_{i, j} was a number in the j'th row and i'th column.
+
+So, Mike decided to calculate both E_{1} = A_{i1}, j_{1} + A_{i2}, j_{2} + ... + A_{iL}, j_{L} and E_{2} = Aj_{1}, i_{1} + Aj_{2}, i_{2} + ... + Aj_{L}, i_{L}. If it is impossible to calculate E_{1}(i.e. one of the summands doesn't exist), then let's assume, that it is equal to -1. If it is impossible to calculate E_{2}, then let's also assume, that it is equal to -1.
+
+Your task is to calculate max(E_{1}, E_{2}).
+
+------ Input ------ 
+
+The first line contains two integers N and M, denoting the number of rows and the number of columns respectively.
+
+Each of next N lines contains M integers. The j'th integer in the (i + 1)'th line of the input denotes A_{i, j}.
+
+The (N + 2)'th line contains an integer L, denoting the number of pairs of integers, that Mike has.
+
+Each of next L lines contains a pair of integers. The (N + 2 + k)-th line in the input contains a pair (i_{k}, j_{k}).
+
+------ Output ------ 
+
+The first line should contain an integer, denoting max(E_{1}, E_{2}).
+
+------ Scoring ------ 
+
+1 ≤ i_{k}, j_{k} ≤ 500 for each test case.
+
+Subtask 1 (10 points): 1 ≤ N, M, L ≤ 5, 0 ≤ A_{i, j} ≤ 10;
+
+Subtask 2 (12 points): 1 ≤ N, M, L ≤ 300, 0 ≤ A_{i, j} ≤ 10^{6}, all the numbers in A are equal;
+
+Subtask 3 (20 points): 1 ≤ N, M, L ≤ 300, 0 ≤ A_{i, j} ≤ 10^{9};
+
+Subtask 4 (26 points): 1 ≤ N, M, L ≤ 500, 0 ≤ A_{i, j} ≤ 10^{9};
+
+Subtask 5 (32 points): 1 ≤ N, M ≤ 500, 1 ≤ L ≤ 250 000, 0 ≤ A_{i, j} ≤ 10^{9}.
+
+----- Sample Input 1 ------ 
+3 2
+1 2
+4 5
+7 0
+2
+1 2
+2 2
+----- Sample Output 1 ------ 
+9
+----- explanation 1 ------ 
+
+In this test case N equals to 3, M equals to 2, L equals to 2. E1 = 2 + 5 = 7, E2 = 4 + 5 = 9. The answer is max(E1, E2) = max(7, 9) = 9;
+
+----- Sample Input 2 ------ 
+1 3
+1 2 3
+2
+1 3
+3 1
+----- Sample Output 2 ------ 
+-1
+----- explanation 2 ------ 
+
+In the second test case N equals to 1, M equals to 3, L equals to 2. It is impossible to calculate E1 and E2, because A3, 1 doesn't exist. So the answer is max(E1, E2) = max(-1, -1) = -1;
+
+----- Sample Input 3 ------ 
+1 3
+1 2 3
+2
+1 1
+3 1
+----- Sample Output 3 ------ 
+4
+----- explanation 3 ------ 
+
+In the third test case N equals to 1, M equals to 3, L equals to 2. It is impossible to calculate E1, because A3, 1 doesn't exist. So E1 is equal to -1. E2 = 1 + 3 = 4. The answer is max(E1, E2) = max(-1,4) = 4.
+

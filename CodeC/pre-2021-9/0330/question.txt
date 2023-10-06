@@ -1,0 +1,47 @@
+Read problems statements Mandarin chinese, in Russian and Vietnamese as well. 
+
+Chef Tobby is playing a rapid fire with Bhuvan. He gives Bhuvan a string S and each time, Bhuvan has to guess whether there exists 2 equal subsequences in the string or not.
+
+Bhuvan got a perfect score in the game with Chef Tobby. However, Chef Tobby has now asked Bhuvan to write a program that will do this automatically given a string S. Bhuvan is an intelligent man but he does not know how to write a code. Can you help him?
+
+Find two different subsequences such that they are equal in their value, more formally, find two sequences of indices (a_{1}, a_{2}, ..., a_{k-1}, a_{k}) and (b_{1}, b_{2}, ..., b_{k-1}, b_{k}) such that:
+
+1≤ a_{i}, b_{i} ≤ |S|
+a_{i} < a_{i+1} for all valid i
+b_{i} < b_{i+1} for all valid i
+Sa_{i} = Sb_{i} for all valid i
+there exist at least one i such that a_{i} is not equal to b_{i}
+
+------ Input section ------ 
+
+The first line contains T, the number of test cases.
+
+Each of the next T lines contain one string S each.
+
+Input will only consist of lowercase english characters
+
+------ Output section ------ 
+
+For each test case, output "yes" or "no" (without quotes) as the solution to the problem.
+
+------ Input constraints ------ 
+
+1 ≤ T ≤ 1000
+1 ≤ length of S ≤ 100
+
+----- Sample Input 1 ------ 
+4
+likecs
+venivedivici
+bhuvan
+codechef
+----- Sample Output 1 ------ 
+no
+yes
+no
+yes
+----- explanation 1 ------ 
+In test case 2, one of the possible equal subsequence is "vi" and "vi". (one at position {0, 3} and other at {4, 7}, assuming 0-based indexing).
+
+In test case 4, one of the possible equal subsequence is "ce" and "ce". (one at position {0, 3} and other at {4, 6}, assuming 0-based indexing).
+

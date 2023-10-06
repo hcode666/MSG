@@ -1,0 +1,49 @@
+Stack has a positive integer P(P > 1).  
+He starts a game where his initial score is 0.
+
+In the i^{th} turn, with a probability of \frac{1}{2}, Stack adds \frac{1}{P^{i-1}} to his score. 
+ 
+Stack stops after N turns.
+
+Let S_{i} be his score after i turns and F(i) denote the [expected value] of S_{i}^{2}. 
+
+For each integer i(1 ≤ i ≤ N), find the value of F(i) modulo 998244353. 
+
+------ Input Format ------ 
+
+The only line of input contains two space-separated positive integers N and P, as mentioned in the statement.
+
+------ Output Format ------ 
+
+Print N space-separated integers. For each integer i(1 ≤ i ≤ N), output the value of F(i) modulo 998244353. 
+
+Formally, let M=998244353. It can be shown that the answer can be expressed as an irreducible fraction \frac{x}{y}, where x and y are integers and y \not \equiv 0 \pmod{M}.  
+Output the integer equal to x \cdot y^{-1} \bmod M .  
+In other words, output such an integer z that 0 ≤ z < M and z \cdot y \equiv x \pmod{M}.
+.
+
+------ Constraints ------ 
+
+$1 ≤ N ≤ 3 \cdot 10^{5}$
+$2 ≤ P ≤ 10^{5}$
+
+----- Sample Input 1 ------ 
+2 2
+
+----- Sample Output 1 ------ 
+499122177 124780545
+
+----- explanation 1 ------ 
+$S_{1}$ can be $0$ or $1$ with equal probability.
+Thus $F(1)=\frac{0 \cdot 0}{2}+\frac{1 \cdot 1}{2} = \frac{1}{2}$.
+
+$F(2)=\frac{7}{8}$.
+
+----- Sample Input 2 ------ 
+10 343
+
+----- Sample Output 2 ------ 
+499122177 379526990 822885144 761122022 256959043 151932103 340445396 758502677 478338987 125853909
+
+----- explanation 2 ------ 
+

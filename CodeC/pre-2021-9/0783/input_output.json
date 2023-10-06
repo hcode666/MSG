@@ -1,0 +1,1 @@
+{"inputs": ["3\naaaabccc\naabbcc\nppppmmnnoooopp"], "outputs": ["Dynamic\nNot\nDynamic"]}

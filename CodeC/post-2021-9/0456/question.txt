@@ -1,0 +1,49 @@
+You are given an array A with N positive elements A_{1}, A_{2}, \dots, A_{N}. You are also given a function S on any array C with length N defined as follow:
+	
+S(C) = \sum\limits_{i=1}^{N}(\dfrac{C_{i-1} + C_{i+1}}{2}-C_{i})
+
+Note that conventionally, we define all elements outside the range of the array to have value 0. In this context, C_{0} = C_{N + 1} = 0.
+
+Consider the following process:
+Choose a permutation P of values from 1 to N uniformly randomly.
+Let B be the array of N elements B_{1}, B_{2}, \dots, B_{N}, where B_{i} = A_{P_{i}}.
+
+Define V as the expected value of |S(B)|. Find \lfloor V \rfloor.
+
+Note : 
+|X| denotes absolute value of X
+\lfloor X \rfloor is the greatest integer that does not exceed X.
+
+------ Input Format ------ 
+
+- The first line of the input contains an integer T - the number of test cases. The test cases then follow.
+- The first line of each test case contains an integer N - the size of array.
+- The second line of each test case contains N integers A_{1},A_{2},\dots,A_{N} - the elements of the array.
+
+------ Output Format ------ 
+
+For each testcase, output \lfloor V \rfloor in a new line.
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 10$
+$1 ≤ N ≤ 2 \cdot 10^{5}$
+$1 ≤ A_{i} ≤ 2 \cdot 10^{5}$
+
+----- Sample Input 1 ------ 
+2
+2
+1 1
+3
+8 2 2
+----- Sample Output 1 ------ 
+1
+4
+----- explanation 1 ------ 
+- Test case $2$:
+- With $P = [1, 2, 3]$ or $P = [1, 3, 2]$, we obtain $B = [8, 2, 2]$, which has $|S(B)| = |(\frac{0 + 2}{2} - 8) + (\frac{8 + 2}{2} - 2) + (\frac{2 + 0}{2} - 2)| = 5$.
+- With $P = [2, 1, 3]$ or $P = [3, 1, 2]$, we obtain $B = [2, 8, 2]$, which has $|S(B)| = |(\frac{0 + 8}{2}-2)+(\frac{2 + 2}{2}-8)+(\frac{8 + 0}{2}-2)| = 2$.
+- With $P = [2, 3, 1]$ or $P = [3, 2, 1]$, we obtain $B = [2, 2, 8]$, which has $|S(B)| = |(\frac{0 + 2}{2}-2)+(\frac{2 + 8}{2}-2)+(\frac{2 + 0}{2}-8)| = 5$.
+
+Therefore $V = \frac{5 + 5 + 2 + 2 + 5 + 5}{6} = 4$. We output $\lfloor V \rfloor = 4$.
+

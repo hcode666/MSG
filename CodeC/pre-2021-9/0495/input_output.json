@@ -1,0 +1,1 @@
+{"inputs": ["2\n101\n010\n1111\n1010", "1\n101010\n110011\n", "3\n101\n010\n1111\n1010\n1111\n1011\n"], "outputs": ["Lucky Chef\n2\nUnlucky Chef", "Lucky Chef\n2\n", "Lucky Chef\n2\nUnlucky Chef\nLucky Chef\n2\n"]}

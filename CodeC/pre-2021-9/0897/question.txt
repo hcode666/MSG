@@ -1,0 +1,50 @@
+Read problem statements in [Hindi], [Bengali], [Mandarin Chinese], [Russian], and [Vietnamese] as well.
+
+Chef bought a huge (effectively infinite) planar island and built $N$ restaurants (numbered $1$ through $N$) on it. For each valid $i$, the Cartesian coordinates of restaurant $i$ are $(X_{i}, Y_{i})$.
+
+Now, Chef wants to build $N-1$ straight narrow roads (line segments) on the island. The roads may have arbitrary lengths; restaurants do not have to lie on the roads. The slope of each road must be $1$ or $-1$, i.e. for any two points $(x_{1}, y_{1})$ and $(x_{2}, y_{2})$ on the same road, $|x_{1}-x_{2}| = |y_{1}-y_{2}|$ must hold.
+
+Let's denote the minimum distance Chef has to walk from restaurant $i$ to reach a road by $D_{i}$. Then, let's denote $a = \mathrm{max}\,(D_{1}, D_{2}, \ldots, D_{N})$; Chef wants this distance to be minimum possible.
+
+Chef is a busy person, so he decided to give you the job of building the roads. You should find a way to build them that minimises $a$ and compute $a \cdot \sqrt{2}$.
+
+------  Input ------
+The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
+The first line of each test case contains a single integer $N$.
+$N$ lines follow. For each valid $i$, the $i$-th of these lines contains two space-separated integers $X_{i}$ and $Y_{i}$.
+
+------  Output ------
+For each test case, print a single line containing one real number — the minimum distance $a$ multiplied by $\sqrt{2}$. Your answer will be considered correct if its absolute or relative error does not exceed $10^{-6}$.
+
+------  Constraints  ------
+$1 ≤ T ≤ 100$
+$2 ≤ N ≤ 10^{4}$
+$|X_{i}|, |Y_{i}| ≤ 10^{9}$ for each valid $i$
+
+------  Subtasks ------
+Subtask #1 (10 points):
+$1 ≤ T ≤ 10$
+$2 ≤ N ≤ 5$
+$|X_{i}|, |Y_{i}| ≤ 10$ for each valid $i$
+$a \cdot \sqrt{2}$ is an integer
+
+Subtask #2 (90 points): original constraints
+
+----- Sample Input 1 ------ 
+2
+3
+0 0
+0 1
+0 -1
+3
+0 1
+1 0
+-1 0
+----- Sample Output 1 ------ 
+0.5
+0
+----- explanation 1 ------ 
+Example case 1: We should build roads described by equations $y-x+0.5 = 0$ and $y-x-0.5 = 0$.
+
+Example case 2: We should build roads described by equations $y-x-1 = 0$ and $y+x-1 = 0$.
+

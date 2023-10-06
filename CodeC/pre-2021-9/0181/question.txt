@@ -1,0 +1,38 @@
+Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. 
+
+Watson gives an array A of N integers A_{1}, A_{2}, ..., A_{N} to Sherlock. He wants Sherlock to reorganize the array in a way such that no two adjacent numbers differ by more than 1.
+Formally, if reorganized array is B_{1}, B_{2}, ..., B_{N}, then the condition that | B_{i} - B_{i + 1} | ≤ 1, for all 1 ≤ i < N(where |x| denotes the absolute value of x) should be met.
+Sherlock is not sure that a solution exists, so he asks you.
+
+------ Input ------ 
+
+First line contains T, number of test cases. Each test case consists of N in one line followed by N integers in next line denoting A_{1}, A_{2}, ..., A_{N}.
+
+------ Output ------ 
+
+For each test case, output in one line YES or NO denoting if array A can be reorganized in required way or not.
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 100$
+$1 ≤ N ≤ 10^{5}$
+$1 ≤ A_{i} ≤  10^{9}$
+$Sum of N over all test cases  ≤ 2*10^{5}$
+
+----- Sample Input 1 ------ 
+2
+4
+3 2 2 3 
+2
+1 5
+----- Sample Output 1 ------ 
+YES
+NO
+----- explanation 1 ------ 
+
+Test case 1:
+No need to reorganise.
+
+Test case 2:
+No possible way.
+

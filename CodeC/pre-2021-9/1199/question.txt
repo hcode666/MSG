@@ -1,0 +1,33 @@
+Read problems statements in Mandarin chinese, Russian and Vietnamese as well. 
+
+You are given a sequence of n integers a_{1}, a_{2}, ..., a_{n} and an integer d.
+Find the length of the shortest non-empty contiguous subsequence with sum of elements at least d. Formally, you should find the smallest positive integer k with the following property: there is an integer s (1 ≤ s ≤ N-k+1) such that a_{s} + a_{s+1} + ... + a_{s+k-1} ≥ d.
+
+------ Input ------ 
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains two space-separated integers n and d.
+The second line contains n space-separated integers a_{1}, a_{2}, ..., a_{n}.
+
+------ Output ------ 
+
+For each test case, print a single line containing one integer — the length of the shortest contiguous subsequence with sum of elements ≥ d. If there is no such subsequence, print -1 instead.
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 10^{5}$
+$1 ≤ n ≤ 10^{5}$
+$-10^{9} ≤ d ≤ 10^{9}$
+$-10^{4} ≤ a_{i} ≤ 10^{4}$
+$1 ≤ sum of n over all test cases ≤ 2 · 10^{5}$
+
+----- Sample Input 1 ------ 
+2
+5 5
+1 2 3 1 -5
+5 1
+1 2 3 1 -5
+----- Sample Output 1 ------ 
+2
+1
+

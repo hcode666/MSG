@@ -1,0 +1,1 @@
+{"inputs": ["1\n1\n4", "2\n2\n3 5\n1\n2\n", "2\n1\n4\n2\n1 2", "2\n1\n3\n3\n4", "1\n3\n5 8 12\n", "1\n3\n5 7 9\n", "1\n2\n5 5", "2\n1\n5\n3\n4 5 6\n", "1\n2\n4 6\n"], "outputs": ["Little Chef", "Head Chef\nLittle Chef\n", "Little Chef\nLittle Chef\n", "Little Chef\nLittle Chef\n", "Little Chef\n", "Little Chef\n", "Head Chef", "Little Chef\nHead Chef\n", "Little Chef\n"]}

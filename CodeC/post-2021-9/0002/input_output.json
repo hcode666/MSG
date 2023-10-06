@@ -1,0 +1,1 @@
+{"inputs": ["3\nABCDE\nEDCBA\nROUND\nRINGS\nSTART\nSTUNT\n", "1\nZZZZZ\nAAAAA\n", "1\nABCDE\nABCDE\n", "1\nWWWWW\nWWWWW\n", "1\nABCDE\nABCDE\n", "1\nTABCA\ntabca\n", "1\nSSSSS\nSSSSS\n"], "outputs": ["BBGBB\nGBBBB\nGGBBG\n", "BBBBB\n", "GGGGG\n", "GGGGG\n", "GGGGG\n", "BBBBB\n", "GGGGG\n"]}

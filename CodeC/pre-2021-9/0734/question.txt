@@ -1,0 +1,64 @@
+Read problems statements in [Mandarin Chinese], [Russian], and [Bengali] as well.
+
+You are given an array A with N integers. You have to tell Chef whether this array is closed under multiplication. 
+
+We say that an array is closed under multiplication if, for all sequences 1 ≤ S_{1} < S_{2} < \dots < S_{k} ≤ N,  there exists 1 ≤ x ≤ N such that A_{S_{1}} \cdot A_{S_{2}} \cdot \dots \cdot A_{S_{k}} = A_{x}. 
+
+Output 1 if it is closed, and 0 otherwise.
+
+------ Input Format ------ 
+
+- The first line of the input contains T - the number of test cases. Then the test cases follow.
+- The first line of each test case contains a single integer - N
+- The second line of each test case contains N space-separated integers - the i^{th} of which is A_{i}
+
+------ Output Format ------ 
+
+For each test case, output the answer on a new line. Output 1 if A is closed under multiplication, and 0 otherwise. 
+
+------ Constraints ------ 
+
+$1 ≤ T, N ≤ 10^{5}$
+$-10^{9} ≤ A_{i}  ≤ 10^{9}$
+- The sum of $N$ across all test cases does not exceed $10^{6}$
+
+----- Sample Input 1 ------ 
+3
+3
+1 0 3
+3
+1 -1 -1
+3
+1 3 3
+----- Sample Output 1 ------ 
+1
+1
+0
+
+----- explanation 1 ------ 
+Test case $1$: $[1, 0, 3]$ is closed under multiplication.
+
+$A_{1} \cdot A_{2} = 1 \cdot 0 = 0 = A_{2}$
+
+$A_{1} \cdot A_{2} \cdot A_{3} = 1 \cdot 0 \cdot 3 = 0 = A_{2}$
+
+$A_{1} \cdot A_{3} = 1 \cdot 3 = 3 = A_{3}$
+
+$A_{2} \cdot A_{3} = 0 \cdot 3 = 0 = A_{2}$
+
+Therefore, the answer for the first test case is $1$.
+
+Test case $2$: $[1, -1, -1]$ is closed under multiplication.
+
+$A_{1} \cdot A_{2} = 1 \cdot -1 = -1 = A_{2}$
+
+$A_{1} \cdot A_{2} \cdot A_{3} = 1 \cdot -1 \cdot -1 = 1 = A_{1}$
+
+$A_{1} \cdot A_{3} = 1 \cdot -1 = -1 = A_{2}$
+
+$A_{2} \cdot A_{3} = -1 \cdot -1 = 1 = A_{1}$
+
+Therefore, the answer for the second test case is $1$.
+
+Test case $3$: $A_{2} \cdot A_{3} = 3 \cdot 3 = 9$ is not present in the array. Therefore, $[1, 3, 3]$ is not closed under multiplication, and the answer is $0$.
+

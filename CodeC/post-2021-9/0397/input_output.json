@@ -1,0 +1,1 @@
+{"inputs": ["4\n3\nabb\nbaz\n3\nzzc\naaa\n4\nfxbs\ndkrc\n5\neaufq\ndrtkn\n", "1\n1\na\na\n", "1\n1\nz\na\n", "1\n3\nzaz\nazd\n", "1\n1\na\nb\n", "1\n1\nz\na\n", "1\n1\na\na\n", "1\n2\naz\nba\n", "1\n1\na\nz\n", "1\n10\naaaaaaaaaa\naaaaaaaaaa\n"], "outputs": ["2\n0\n11\n9\n", "0\n", "1\n", "4\n", "1\n", "1\n", "0\n", "2\n", "1\n", "0\n"]}

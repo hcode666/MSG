@@ -1,0 +1,1 @@
+{"inputs": ["3\nNNN\nPNP\nNPNPNPNNP\n", "1\nPPNPPNNNP\n", "1\nPPP\n", "3\nNNN\nPNP\nNPNPNPNNP\n", "3\nNNN\nPNP\nNPNPNPNNP\n", "1\nPPPNNN\n", "2\nNNN\nPNP\n", "3\nNNN\nPNP\nNPNPNPNNP\n"], "outputs": ["2\n0\n2", "1\n", "1\n", "2\n0\n2", "2\n0\n2\n", "3", "2\n0\n", "2\n0\n2\n"]}

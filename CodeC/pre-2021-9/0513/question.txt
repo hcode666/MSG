@@ -1,0 +1,44 @@
+Read problems statements in Mandarin chinese, Russian and Vietnamese as well. 
+
+You are given N integer sequences A_{1}, A_{2}, ..., A_{N}. Each of these sequences contains N elements. You should pick N elements, one from each sequence; let's denote the element picked from sequence A_{i} by E_{i}. For each i (2 ≤ i ≤ N), E_{i} should be strictly greater than E_{i-1}.
+ 
+Compute the maximum possible value of E_{1} + E_{2} + ... + E_{N}. If it's impossible to pick the elements E_{1}, E_{2}, ..., E_{N}, print -1 instead.
+
+------ Input ------ 
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single integer N.
+N lines follow. For each valid i, the i-th of these lines contains N space-separated integers A_{i1}, A_{i2}, ..., A_{iN} denoting the elements of the sequence A_{i}.
+
+------ Output ------ 
+
+For each test case, print a single line containing one integer — the maximum sum of picked elements. 
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 10$
+$1 ≤ N ≤ 700$
+$1 ≤ sum of N in all test-cases ≤ 3700$
+$1 ≤ A_{ij} ≤ 10^{9} for each valid i, j$
+
+------ Subtasks ------ 
+
+Subtask #1 (18 points): 1 ≤ A_{ij} ≤ N for each valid i, j
+
+Subtask #2 (82 points): original constraints
+
+----- Sample Input 1 ------ 
+1
+
+3
+
+1 2 3
+
+4 5 6
+
+7 8 9
+----- Sample Output 1 ------ 
+18
+----- explanation 1 ------ 
+Example case 1: To maximise the score, pick 3 from the first row, 6 from the second row and 9 from the third row. The resulting sum is E1+E2+E3 = 3+6+9 = 18.
+

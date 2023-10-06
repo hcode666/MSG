@@ -1,0 +1,1 @@
+{"inputs": ["3\nA.B\nA..B\nA..B.A..B"], "outputs": ["A\nA\nB"]}

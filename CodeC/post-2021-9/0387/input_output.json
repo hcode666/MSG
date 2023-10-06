@@ -1,0 +1,1 @@
+{"inputs": ["2\nabdeba\ncodechef", "2\nabc\nxyz\n", "1\nunplugged", "1\naaa", "1\nabcdefg", "1\nhello", "1\nabcde"], "outputs": ["3\n7", "2\n2\n", "8", "0\n", "6\n", "4", "4"]}

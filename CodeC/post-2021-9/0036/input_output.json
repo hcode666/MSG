@@ -1,0 +1,1 @@
+{"inputs": ["2\nA B C\nA B\nB C A\nA C", "1\nA B C\nA C", "1\nB C A\nC B", "1\nB C A\nB A", "3\nA B C\nA C\nB C A\nA C\nA C B\nA B\nB C", "1\nC B A\nC B", "1\nC B A\nC A", "1\nC B A\nC A", "1\nA C B\nB C", "1\nC B A\nC B", "1\nC B A\nB C\n", "1\nA B C\nA B\n"], "outputs": ["A\nC", "A\n", "B\n", "B\n", "A\nA\nC\n", "C\n", "C\n", "C\n", "C", "C\n", "C\n", "A\n"]}

@@ -1,0 +1,1 @@
+{"inputs": ["3\naaaaa#bb#cc#dddd\nacb#aab#bab#accba\nabc#dda#bb#bb#aca"], "outputs": ["16\n10\n11"]}

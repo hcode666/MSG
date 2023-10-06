@@ -1,0 +1,47 @@
+Read problem statements in [Vietnamese],
+[Bengali], [Mandarin Chinese], and [Russian] as well. 
+
+Chefland has 2 different types of coconut, type A and type B. Type A contains only x_{a} milliliters of coconut water and type B contains only x_{b} grams of coconut pulp. Chef's nutritionist has advised him to consume X_{a} milliliters of coconut water and X_{b} grams of coconut pulp every week in the summer. Find the total number of coconuts (type A + type B) that Chef should buy each week to keep himself active in the hot weather.
+
+------ Input Format ------ 
+
+- The first line contains an integer T, the number of test cases. Then the test cases follow. 
+- Each test case contains a single line of input, four integers x_{a}, x_{b}, X_{a}, X_{b}.
+
+------ Output Format ------ 
+
+For each test case, output in a single line the answer to the problem.
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 15000$
+$100 ≤ x_{a} ≤ 200$
+$400 ≤ x_{b} ≤ 500$
+$1000 ≤ X_{a} ≤ 1200$
+$1000 ≤ X_{b} ≤ 1500$
+$x_{a}$ divides $X_{a}$.
+$x_{b}$ divides $X_{b}$.
+
+------ subtasks ------ 
+
+Subtask #1 (100 points): original constraints
+
+----- Sample Input 1 ------ 
+3
+100 400 1000 1200
+100 450 1000 1350
+150 400 1200 1200
+----- Sample Output 1 ------ 
+13
+13
+11
+----- explanation 1 ------ 
+TestCase $1$: 
+Number of coconuts of Type $A$ required = $\frac{1000}{100} = 10$ and number of coconuts of Type $B$ required = $\frac{1200}{400} = 3$.  So the total number of coconuts required is $10 + 3 = 13$.
+
+TestCase $2$: 
+Number of coconuts of Type $A$ required = $\frac{1000}{100} = 10$ and number of coconuts of Type $B$ required = $\frac{1350}{450} = 3$.  So the total number of coconuts required is $10 + 3 = 13$.
+
+TestCase $3$: 
+Number of coconuts of Type $A$ required = $\frac{1200}{150} = 8$ and number of coconuts of Type $B$ required = $\frac{1200}{400} = 3$.  So the total number of coconuts required is $8 + 3 = 11$.
+

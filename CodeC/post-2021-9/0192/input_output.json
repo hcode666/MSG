@@ -1,0 +1,1 @@
+{"inputs": ["4\n8\ncodechef\n8\nchefcode\n14\nsxycodeghychef\n21\nsxychefvsvcodehghchef\n", "1\n10\ncochefcode\n", "1\n10\nchefcodechf\nd\n", "1\n8\nchefcode\n", "1\n8\ncodechef\n", "1\n20\nsxycodeghychefvscoderanandomchef\n", "2\n11\ncccodechefc\n11\ncchefcodecc\n"], "outputs": ["AC\nWA\nAC\nWA\n", "WA\n", "WA\n", "WA\n", "AC\n", "AC\n", "AC\nWA\n"]}

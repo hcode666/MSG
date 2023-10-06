@@ -1,0 +1,49 @@
+Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. 
+
+There are N integers X_{1}, X_{2}, ..., X_{N}.
+
+Let's define Y_{i,j} = X_{i} × X_{j} mod 359999.
+
+How many integer 6-tuples (a, b, c, d, e, f) are there such that:
+
+1 ≤ a, b, c, d, e, f ≤ N
+gcd(Y_{a, b}, Y_{c, d}, Y_{e, f}) = 1
+
+We define gcd(0, 0) = 0.
+
+------ Input ------ 
+
+The first line of input contains an integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single integer N.
+The second line contains N integers separated by single spaces: X_{1}, X_{2}, ..., X_{N}.
+
+------ Output ------ 
+
+For each test case, output a single line containing the answer. Since the answer can be very large, only output it modulo 10^{9} + 7.
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 3$
+$1 ≤ X_{i} ≤ 10^{6}$
+
+------ Subtasks ------ 
+
+Subtask #1 (47 points):
+
+$1 ≤ N ≤ 10^{3}$
+ 
+Subtask #2 (53 points):
+
+$1 ≤ N ≤ 10^{6}$
+$The sum of the Ns is ≤ 10^{6}$
+ 
+------ Example ------ 
+
+Input:
+1
+3
+300 3000 30000
+
+Output:
+234
+

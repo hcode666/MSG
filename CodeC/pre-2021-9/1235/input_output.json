@@ -1,0 +1,1 @@
+{"inputs": ["2\n4\n1 2\n1 3\n1 4\n7\n1 2\n2 3\n1 4\n4 5\n1 6\n6 7"], "outputs": ["YES\n1 2 3 4\nNO"]}

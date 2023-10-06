@@ -1,0 +1,53 @@
+Read problems statements in Mandarin Chinese  and Russian. 
+
+Chef likes strings a lot but moreover he likes good strings. Chef calls a string str a good string if str starts and ends at different characters. For eg : strings such as abab , baccba , abc are all good strings whereas strings like aba, baab , baacaab are not good at all .
+Today, Chef has a special string P consisting of lower case letters "c" , "h" , "e" and "f" only. Chef wants to make some queries about his string P.
+Each of chef's query has the following form a b L R. For a given query, Chef wants to count the number of good strings which starts at letter a and ends at letter b such that starting index S_{i} and ending index E_{i} of a chosen substring satisfies L ≤ S_{i} < E_{i} ≤ R.
+NOTE
+Two substrings P_{1} and P_{2} are considered to be different if either S_{1} != S_{2} or E_{1} != E_{2} where S_{1},E_{1} and S_{2},E_{2} are the starting and ending index of string P_{1} and string P_{2} respectively.
+Chef is not able to accomplish this task efficiently. Can you help him ? 
+
+------ Input ------ 
+
+First line of the input contains a string P denoting the chef's special string. Next line of the input contains a single integer Q denoting the number of chef's queries. Next Q lines of the input contains four space separated parameters where the first two parameters are characters denoting a and b respectively and rest two are integers denoting L and R respectively.
+
+------ Output ------ 
+
+For each chef's query, print the required answer.
+
+------ Constraints ------ 
+
+$1 ≤ |P| ≤ 10^{6}$
+$1 ≤ Q ≤ 10^{6}$
+$1 ≤ L ≤ R ≤ |P|$
+$P,a,b belongs to the set of lower case letters [c,h,e,f] and a != b. 		
+$$All test files are strictly according to constraints.$
+
+------ Subtasks ------ 
+
+$ Subtask #1: 1≤|P|,Q≤10^{4} : 27 pts$
+$ Subtask #2: 1≤|P|,Q≤10^{5} : 25 pts$
+$ Subtask #3: 1≤|P|,Q≤10^{6} : 48 pts$
+
+------ Warning ------ 
+
+Large test data set, Prefer to use faster input/output methods .
+
+----- Sample Input 1 ------ 
+checfcheff
+5
+c h 1 10
+c f 1 10
+e c 1 10
+c f 1 5
+c f 6 10
+----- Sample Output 1 ------ 
+4
+8
+2
+2
+2
+----- explanation 1 ------ 
+Q1 : good strings are ch , checfch , cfch , ch 
+Q2 : good strings are checf , checfchef , checfcheff , cf , cfchef , cfcheff , chef , cheff
+

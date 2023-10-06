@@ -1,0 +1,1 @@
+{"inputs": ["1\n4\nhasan jaddouh\nfarhod khakimiyon\nkerim kochekov\nhasan khateeb", "1\n3\na a\nb b\nc c"], "outputs": ["hasan jaddouh\nfarhod\nkerim\nhasan khateeb", "a a\nb b\nc c\n"]}

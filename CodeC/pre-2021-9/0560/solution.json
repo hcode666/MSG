@@ -1,0 +1,1 @@
+["import random\nfor x in range(int(input())):\n    n = int(input())\n    a = []\n    for r in range(n):\n        a.append(input())\n    a = set(a)\n    while True:\n        s = ''\n        for xx in range(n):\n            s += str(random.randint(0, 1))\n        if s not in a:\n            print(s)\n            break"]

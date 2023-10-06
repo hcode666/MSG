@@ -1,0 +1,1 @@
+{"inputs": ["3\n6\nABCDAB\nABCDAB\n8\nDDCABCCA\nDNCBBBBA\n3\nCDD\nNDC", "1\n10\nAAAAAAAAAA\nDDDDDDDDDD\n", "1\n3\nABD\nBDA\n", "1\n10\nABCDABCDAB\nABCDABCDAB\n", "1\n5\nAAAAA\nAAAAA\n", "4\n1\nA\nA\n2\nAA\nBB\n2\nDD\nNN\n2\nBB\nDD\n3\nCCC\nDDD\n", "1\n5\nABABD\nABANN\n"], "outputs": ["6\n3\n1", "0\n", "0\n", "10\n", "5", "1\n0\n1\n0\n", "3\n"]}

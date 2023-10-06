@@ -1,0 +1,56 @@
+Read problems statements in mandarin chinese, russian and vietnamese as well. 
+
+Chef and his friend Miron were getting bored and decided to play a game. 
+
+Miron thinks of a sequence of  N  integers (A_{1}, A_{2}, …., A_{N}) and gives Chef a matrix B, where B_{i,j} = |A_{i} - A_{j}|. He further tells Chef that A_{1} = 0. The game is for Chef to guess the sequence that Miron thought of. 
+
+But Miron is an adversarial player. Every time Chef tries to guess the sequence, he makes a change to the matrix. He makes such a change Q times. Each time, he replaces an entry in some row and the corresponding column with a new one leaving Chef to guess the sequence after each change. 
+
+Chef needs a friend to help him against such an adversarial player. Can you be that friend and help Chef find a suitable sequence A for the initial matrix B and also after each change Miron makes? 
+
+Note that if several answers exist, then print the lexicographically smallest answer. Further, the numbers in the sequence can be negative.
+
+------ Input ------ 
+
+The first line contains two space-separated integers N, Q. Each of the N subsequent lines contains N space-separated integers, denoting the matrix B.
+
+Q queries follow. Each query has two lines. The first line of each query contains an integer p, denoting the number of row and column that is changed. The second line of each query contains N space-separated integers F_{1}, F_{2}, F_{3}, ... F_{N}, denoting the new values to the corresponding cells of the matrix (you should make the following assignments B_{i,p} = B_{p,i} = F_{i} for all valid i). 
+
+------ Output ------ 
+
+Print Q + 1 lines which contain N space-separated integers, Miron's initial array and Miron's array after each query.
+
+------ Constraints ------ 
+
+$3 ≤ N ≤  1000 $
+$1 ≤ Q ≤  1000 $
+$0 ≤ B_{i,j} ≤  5000 $
+$1 ≤ p ≤  n $
+$0 ≤ F_{i} ≤  5000 $
+$it's guaranteed there's always an answer$
+
+----- Sample Input 1 ------ 
+3 2
+
+0 1 2
+
+1 0 1
+
+2 1 0
+
+1
+
+0 4 3
+
+2
+
+4 0 7
+----- Sample Output 1 ------ 
+0 -1 -2
+
+0 -4 -3
+
+0 -4 3
+----- explanation 1 ------ 
+Example case 1. Initially, sequence {0, 1, 2} is also suitable, but {0, -1, -2} is lexicografically smaller.
+

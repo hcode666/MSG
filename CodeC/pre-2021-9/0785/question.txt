@@ -1,0 +1,55 @@
+Read problems statements in Mandarin Chinese, Russian and Vietnamese as well. 
+
+Chef has just learned a new data structure - Fenwick tree. This data structure holds information about array of N elements and can process two types of operations:
+
+Add some value to i^{th} element of the array
+Calculate sum of all elements on any prefix of the array
+
+Both operations take O(log N) time. This data structure is also well known for its low memory usage. To be more precise, it needs exactly the same amount of memory as that of array.
+
+Given some array A, first we build data structure in some other array T. T_{i} stores the sum of the elements A_{start}, A_{start + 1}, ..., A_{i}. Index start is calculated with formula start = F_{down}(i) = (i & (i + 1)). Here "&" denotes bitwise AND operation.
+
+So, in order to find a sum of elements A_{0}, A_{1}, ..., A_{L} you start with index L and calculate sum of T_{L} + TF_{down}(L)-1 + TF_{down}(F_{down}(L)-1)-1 + ... + TF_{down}(F_{down}(...(F_{down}(L)-1)-1)-1. Usually it is performed with cycle that goes from L down to 0 with function F_{down} and sums some elements from T. Chef wants to verify that the time complexity to calculate sum of A_{0}, A_{1}, A_{2}, ..., A_{L} is O(log L). In order to do so, he wonders how many times he has to access array T to calculate this sum. Help him to find this out.
+
+Since Chef works with really big indices. The value of L can be very large and is provided to you in binary representation as concatenation of strings L_{1}, L_{2} repeated N times and string L_{3}.
+
+------ Input ------ 
+
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+The only line of each test case contains three non-empty strings L_{1}, L_{2}, L_{3} and an integer N. Strings will contain only characters 0 and 1. To obtain binary representation of index L concatenate L_{1} with L_{2} repeated N times and with L_{3}. You are guaranteed that the index will be positive.
+
+------ Output ------ 
+
+For each test case, output a single line containing number of times Fenwick tree data structure will access array T in order to compute sum of A_{0}, A_{1}, A_{2}, ..., A_{L}.
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 300$
+$1 ≤ Length(L_{i}) ≤ 1000$
+$1 ≤ N ≤ 10^{6}$
+
+------ Subtasks ------ 
+
+$Subtask #1 (20 points): |L_{1}| + |L_{2}| * N + |L_{3}| ≤ 60$
+$Subtask #2 (30 points): 1 ≤ T ≤ 30, 1 ≤ N ≤ 100$
+$Subtask #3 (50 points): No additional constraints$
+
+----- Sample Input 1 ------ 
+4
+
+001 100 011 4
+
+1000 1101 100 3
+
+1010 001 101 4
+
+010 101 000 4
+----- Sample Output 1 ------ 
+6
+
+12
+
+8
+
+10
+

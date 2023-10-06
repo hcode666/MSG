@@ -1,0 +1,61 @@
+Read problem statements in [Hindi], [Bengali], [Mandarin Chinese], [Russian], and [Vietnamese] as well.
+
+You are given $M$ triplets $(X_{1}, Y_{1}, B_{1}), (X_{2}, Y_{2}, B_{2}), \ldots, (X_{M}, Y_{M}, B_{M})$. Find the number of sequences of positive integers $A_{1}, A_{2}, \ldots, A_{N}$ such that for each valid $i$, $\mathrm{lcm}(A_{X_{i}},A_{Y_{i}}) = B_{i}$, or determine that there is an infinite number of such sequences.
+
+Since the answer can be very large, compute it modulo $1,000,000,007$ ($10^{9} + 7$). Note that the values $B_{1}, B_{2}, \ldots, B_{M}$ can also be very large ― you are given their prime decompositions.
+
+------  Input ------
+The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
+The first line of each test case contains two space-separated integers $N$ and $M$.
+$M$ lines follow. For each $i$ ($1 ≤ i ≤ M$), the $i$-th of these lines contains three space-separated integers $X_{i}$, $Y_{i}$ and $R_{i}$, followed by a space and $2R_{i}$ space-separated integers $p_{1}, e_{1}, p_{2}, e_{2}, \ldots, p_{R_{i}}, e_{R_{i}}$, denoting that $B_{i} = \prod_{r=1}^{R_{i}} p_{r}^{e_{r}}$.
+
+------  Output ------
+For each test case, print a single line containing one integer ― the number of valid sequences modulo $1,000,000,007$, or $-1$ if there are infinitely many valid sequences.
+
+------  Constraints ------
+$1 ≤ T ≤ 3$
+$0 ≤ M ≤ 10^{4}$
+$1 ≤ N ≤ 38$
+$1 ≤ X_{i}, Y_{i} ≤ N$ for each valid $i$
+$0 ≤ R_{i} ≤ 200$ for each valid $i$
+$p_{r}$ is a prime for each valid $r$
+$p_{r} ≤ 10^{6}$ for each valid $r$
+the total number of different primes $p_{r}$ in each test case does not exceed $5$
+$1 ≤ e_{r} ≤ 10^{6}$ for each valid $r$
+
+------  Subtasks ------
+Subtask #1 (20 points, time limit 2 seconds): $N ≤ 20$
+
+Subtask #2 (35 points, time limit 4 seconds): $N ≤ 30$
+
+Subtask #3 (45 points, time limit 4.5 seconds): $T = 1$
+
+----- Sample Input 1 ------ 
+3
+
+2 0
+
+2 2
+
+1 2 0
+
+2 1 0
+
+2 2
+
+1 2 0
+
+2 1 1 2 1
+----- Sample Output 1 ------ 
+-1
+
+1
+
+0
+----- explanation 1 ------ 
+Example case 1: Both elements of $A$ can be any positive integers, so there is an infinite number of valid sequences.
+
+Example case 2: There are two constraints, but they are actually identical: $\mathrm{lcm}(A_{1}, A_{2}) = 1$. The only sequence that satisfies this is $A = [1, 1]$.
+
+Example case 3: The two constraints contradict each other, so there is no valid sequence.
+

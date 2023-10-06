@@ -1,0 +1,1 @@
+{"inputs": ["4\nAB\nABBA\nABAABB\nAA", "1\nAAABBBAA", "1\nABABAB", "1\nAAAAAA", "2\nAAAABBBB\nABABABAB", "2\nABAB\nAAABBB", "2\nABABAB\nBBAA", "2\nAA\nBB\n", "1\nAABB\n", "1\nABAB\n"], "outputs": ["yes\nyes\nno\nno", "no\n", "yes", "no", "no\nyes\n", "yes\nno\n", "yes\nno", "no\nno\n", "no\n", "yes\n"]}

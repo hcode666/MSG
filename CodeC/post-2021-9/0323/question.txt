@@ -1,0 +1,65 @@
+Anton loves creating strings!
+
+Anton now wants to create a string S following some specific rules. They are as follows:
+
+Initially, S is empty. Then, Anton can perform two types of operations on S:
+1. Choose a lowercase Latin character (an element of \{a, b, c, \ldots, z\}) and append it to S. For example, if currently S = \texttt{clap}, Anton can turn it into one of \{\texttt{clapa}, \texttt{clapb}, \ldots, \texttt{clapz}\}.
+2. Append a copy of S to itself. For example, if currently S = \texttt{clap}, Anton can turn it into \texttt{clapclap}.
+
+However, Anton doesn't want to perform operation 1 twice in a row.
+
+You are given a string A consisting of the lowercase Latin alphabet. Is it possible for Anton to create A using his operations any number of times?
+
+------ Input Format ------ 
+
+- The first line of input will contain a single integer T, denoting the number of test cases.
+- Each test case consists of two lines of input.
+- The first line of each test case contains a single integer N, the length of the string A.
+- The second line of each test case contains a string A of length N.
+
+------ Output Format ------ 
+
+For each test case, output on a new line the answer — YES if Anton can create A using his operations, and NO otherwise.
+
+Each character of the output may be printed in either uppercase or lowercase. For example, the strings YES, yes, and YeS will all be treated as identical.
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 10^{5}$
+$1 ≤ N ≤ 10^{6}$
+$A$ consists of only lowercase Latin characters
+- The sum of $N$ across all test cases won't exceed $10^{6}$
+
+----- Sample Input 1 ------ 
+4
+2
+ab
+3
+oof
+6
+aabaab
+5
+eevee
+
+----- Sample Output 1 ------ 
+NO
+YES
+YES
+NO
+
+----- explanation 1 ------ 
+Test case $1$: Anton can create $\texttt{a}$ by starting from the empty string and appending $\texttt{a}$ using operation $1$. However, there is no way to create $\texttt{ab}$ — the only way to do so is to use operation $1$ again and append $\texttt{b}$; but this is not allowed.
+
+Test case $2$: Anton can create $\texttt{oof}$ from the empty string as follows:
+- Use operation $1$ to append $\texttt{o}$. The current string is $\texttt{o}$.
+- Use operation $2$ to append the string to itself. The current string is $\texttt{oo}$.
+- Use operation $1$ to append $\texttt{f}$. The string is now $\texttt{oof}$, as required.
+
+Test case $3$: $\texttt{aabaab}$ can be created as follows:
+- Append $\texttt{a}$ to the empty string. The current string is $\texttt{a}$.
+- Use operation $2$. The current string is $\texttt{aa}$.
+- Append $\texttt{b}$ with operation $1$. The current string is $\texttt{aab}$.
+- Use operation $2$. The current string is $\texttt{aabaab}$, and we are done.
+
+Test case $4$: It can be shown that no sequence of operations will allow Anton to create the string $\texttt{eevee}$.
+

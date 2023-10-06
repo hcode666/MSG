@@ -1,0 +1,1 @@
+{"inputs": ["1\n10 2\nhelloworld\n1 3\n1 10", "2\n6 1\ndefined\n1 4\n12 2\ncodenationhq\n1 10\n2 7", "1\n8 2\nabaababa\n1 4\n2 7", "1\n4 1\nabba\n1 4", "1\n6 1\nabaccc\n2 5"], "outputs": ["NO\nYES", "NO\n", "YES\nYES\n", "YES\n", "YES\n"]}

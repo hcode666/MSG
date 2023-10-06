@@ -1,0 +1,1 @@
+{"inputs": ["4\naa\nababab\naaa\nramialsadaka\nsaid\nsryhieni\ncode\ncodeisfun", "1\naaaaa\nraaaa", "1\nabc\nacb", "1\na\na", "1\naa\naa\n", "1\na\nb\n"], "outputs": ["aaabbb\naaaaadiklmrs\nImpossible\ncodefinsu", "Impossible", "abc", "a\n", "aa\n", "Impossible\n"]}

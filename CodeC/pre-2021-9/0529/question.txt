@@ -1,0 +1,48 @@
+Read problems statements in Mandarin chinese, Russian and Vietnamese as well. 
+Chef found a very useful open-source code for the current problem. Unfortunately, one fragment of code isn't optimized. Consider that problem: given an array D of size N and Q queries X to the following open-source code:
+
+read X
+
+for i = 1..N:
+
+X = floor(X / D[i])
+
+print X
+
+Help Chef to optimize that code for all possible X, he will be very thankful :)
+
+------ Input ------ 
+
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.  The first line of each test case contains two integers - N and Q. The second line contains array D. The third line contains Q queries - X_{1}, X_{2}, ..., X_{Q}. 
+
+------ Output ------ 
+
+For every test case in single line output Q integers - for each X_{i} output result for this query.
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 1000$
+$1 ≤ N, Q ≤ 10^{5}$
+$1 ≤ X_{i}, D_{i} ≤ 10^{9}$
+$ Sum of N over all test cases ≤ 3*10^{5}$
+$ Sum of Q over all test cases ≤ 3*10^{5}$
+
+------ Subtasks ------ 
+
+$Subtask #1: (25 points)  sum of N over all test cases ≤ 3*10^{3} and sum of Q over all test cases ≤ 3*10^{3} $
+$Subtask #2: (75 points)  Original constraints$
+
+----- Sample Input 1 ------ 
+2
+2 3
+2 3
+5 100 8
+3 2
+2 2 2
+16 8
+----- Sample Output 1 ------ 
+0 16 1
+2 1
+----- explanation 1 ------ 
+Example case 1. [[5 / 2] / 3] = 0, [[100 / 2] / 3] = 16, [[8 / 2] / 3] = 1
+

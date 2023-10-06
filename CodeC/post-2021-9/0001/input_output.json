@@ -1,0 +1,1 @@
+{"inputs": ["4\n2\n00\n4\n0011\n6\n101010\n4\n1001\n", "2\n2\n11\n6\n101010\n", "1\n2\n01\n", "2\n2\n10\n2\n00\n"], "outputs": ["A\nAG\nCCC\nCT", "G\nCCC\n", "T\n", "C\nA\n"]}

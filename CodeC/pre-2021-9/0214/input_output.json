@@ -1,0 +1,1 @@
+{"inputs": ["3\n2 2\naa\naA\n3 3\naba\nbab\naba\n4 4\naabb\naabb\nbbaa\nbbaa", "2\n5 5\nabcde\nfghij\nklmno\npqrst\nuvwxy\n3 4\nabab\nscsc\nambm\n", "1\n1 1\nZ\n", "1\n3 3\nabc\ndef\nghi", "1\n6 5\nabcde\nfghij\nklmno\npqrst\nuvwxy\nzabcd", "1\n4 4\nabab\ncdcd\nefef\nghgh", "1\n3 3\nabc\ndef\ng1t"], "outputs": ["0\n1\n4", "0\n0\n", "0\n", "0", "0\n", "0\n", "0"]}

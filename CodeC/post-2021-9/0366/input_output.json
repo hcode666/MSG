@@ -1,0 +1,1 @@
+{"inputs": ["3\n5\nab?c?\naeg?k\n6\nabcde?\nehio??\n4\nabcd\nabcd", "1\n1\na\n?\n", "1\n4\na???\naaaa\n", "1\n2\nxq\naa\n", "1\n1\na\n?", "2\n3\naug\n?lo\n1\n?\n?"], "outputs": ["4\n6\n0", "0\n", "0\n", "2\n", "0", "2\n0\n"]}

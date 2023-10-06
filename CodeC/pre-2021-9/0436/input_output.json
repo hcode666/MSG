@@ -1,0 +1,1 @@
+{"inputs": ["1\n2 Dee\n2 2", "1\n3 Dee\n2 2 2\n", "1\n4 Dum\n1 3 5 7\n", "3\n3 Dee\n1 3 5\n2 Dee\n4 6\n2 Dum\n2 2", "2\n3 Dee\n3 5 7\n4 Dum\n2 4 6 8", "2\n3 Dum\n1 2 3\n4 Dee\n1 1 1 1", "1\n3 Dee\n1 2 3", "3\n3 Dee\n1 2 4\n4 Dum\n4 4 4 4\n5 Dum\n1 3 5 7 9", "1\n3 Dum\n3 5 7\n"], "outputs": ["Dum", "Dum\n", "Dum\n", "Dum\n", "Dum\n", "Dum\nDum\n", "Dum", "Dum\n", "Dum"]}

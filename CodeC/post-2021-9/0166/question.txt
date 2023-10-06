@@ -1,0 +1,67 @@
+From a hidden array A of length N, Stack constructs an array B of length N such that:
+For all i (1 ≤ i ≤ N), B_{i}=\max(A_{1},A_{2},\ldots,A_{i}) or B_{i}=\min(A_{1},A_{2},\ldots,A_{i}).
+
+For the given array B of length N, Stack wants you to check whether a possible array A exists or not.
+
+------ Input Format ------ 
+
+- The first line of input contains a single integer T, denoting the number of test cases. The description of T test cases follow.
+- The first line of each test case contains an integer N - the length of the array B.
+- The second line of each test case contains N space-separated integers B_{1},B_{2},\ldots,B_{N} representing the array B.
+
+------ Output Format ------ 
+
+For each test case, output in a single line YES if A exists, otherwise print NO.
+
+You may print each character of the string in uppercase or lowercase (for example, the strings YES, yEs, yes, and yeS will all be treated as identical).
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 10^{5}$
+$1 ≤ N ≤ 10^{5}$
+$1 ≤ B_{i} ≤ 10^{5}$
+- Sum of $N$ over all test cases does not exceed $10^{5}$.
+
+----- Sample Input 1 ------ 
+3
+1
+343
+4
+1 1 2 3
+3
+1 3 2
+
+----- Sample Output 1 ------ 
+YES
+YES
+NO
+
+----- explanation 1 ------ 
+Test case $1$: The only possible array is $A=[343]$.
+
+Test case $2$: One possible array is $A=[1,1,2,3]$. In this case $B_{i} = max(A_{1}, A_{2}, \ldots, A_{i})$ satisfies for all $1 ≤ i ≤ 4$.
+
+Test case $3$: It can be proven that there exists no $A$ from which we can obtain the given array $B$.
+
+----- Sample Input 2 ------ 
+2
+5
+1 1 1 1 1 
+5
+1 2 1 2 1
+
+----- Sample Output 2 ------ 
+YES
+YES
+
+----- explanation 2 ------ 
+Test case $1$: The only possible array is $A=[1,1,1,1,1]$.
+
+Test case $2$: One possible array is $A=[1,2,1,1,1]$. 
+In this case,
+- $B_{1}=A_{1}$
+- $B_{2}=\max(A_{1},A_{2})$
+- $B_{3}=\min(A_{1},A_{2},A_{3})$
+- $B_{4}=\max(A_{1},A_{2},A_{3},A_{4})$
+- $B_{5}=\min(A_{1},A_{2},A_{3},A_{4},A_{5})$
+

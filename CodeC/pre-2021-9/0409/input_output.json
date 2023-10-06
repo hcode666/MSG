@@ -1,0 +1,1 @@
+{"inputs": ["1\n10", "1\n1010\n", "1\n0101010101", "1\n1010101", "2\n1101111\n0101010101\n", "2\n101\n01010101\n", "2\n111\n10001\n", "2\n10\n1"], "outputs": ["WIN", "LOSE\n", "WIN", "LOSE", "WIN\nLOSE\n", "LOSE\nLOSE\n", "LOSE\nWIN\n", "WIN\n"]}

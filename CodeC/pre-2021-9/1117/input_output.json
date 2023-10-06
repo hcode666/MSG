@@ -1,0 +1,1 @@
+{"inputs": ["2\n4\naba\nabc\nbab\naac\n3\naba\nbaab\nabc", "2\n4\naba\nabc\nbab\naac\n3\naba\nbaab\nabc"], "outputs": ["1.1250000\n0.0277778", "1.1250000\n0.0277778\n"]}

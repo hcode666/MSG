@@ -1,0 +1,1 @@
+{"inputs": ["2\n4 2\n?ab?\nba\n4 2\na??b\nab\n", "1\n4 2\n?a?b\nba\n", "2\n4 2\n?ab?\nba\n4 2\na??b\nab\n"], "outputs": ["aabe\n-1", "aaab\n", "aabe\n-1\n"]}

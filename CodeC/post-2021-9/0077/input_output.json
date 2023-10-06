@@ -1,0 +1,1 @@
+{"inputs": ["3\n4 0\n0 1\n3 1", "1\n9 0\n", "1\n100 0", "1\n0 0\n", "1\n100 1\n", "1\n7 0", "1\n0 0\n", "4\n4 0\n0 1\n3 1\n1 0", "1\n0 0\n", "1\n20 0", "1\n10 0\n", "2\n0 0\n0 1\n"], "outputs": ["Off\nOn\nAmbiguous", "On\n", "Off\n", "Off\n", "On\n", "On", "Off\n", "Off\nOn\nAmbiguous\nOn\n", "Off\n", "Off", "On\n", "Off\nOn\n"]}

@@ -1,0 +1,42 @@
+Read problems statements in [Hindi], [Mandarin Chinese], [Russian], [Vietnamese], and [Bengali] as well.
+
+Chef Ada is building a new restaurant in the following way:
+First, $N$ points $X_{1}, X_{2}, \ldots, X_{N}$ are chosen on the $x$-axis.
+Then, $N$ columns (numbered $1$ through $N$) are made. For simplicity, the columns are represented as vertical segments; for each valid $i$, the height of the $i$-th segment is $H_{i}$.
+Ada assigns a column to each of the points $X_{1}, X_{2}, \ldots, X_{N}$ in an arbitrary way (each column must be assigned to exactly one point).
+Finally, Ada constructs the roof of the restaurant, represented by a polyline with $N$ vertices. Let's denote the column assigned to the $i$-th point by $P_{i}$. For each valid $i$, the $i$-th of these vertices is $(X_{i}, H_{P_{i}})$, i.e. the polyline joins the tops of the columns from left to right.
+
+Ada wants the biggest restaurant. Help her choose the positions of the columns in such a way that the area below the roof is the biggest possible. Formally, she wants to maximise the area of the polygon whose perimeter is formed by the roof and the segments $(X_{N}, H_{P_{N}}) - (X_{N}, 0) - (X_{1}, 0) - (X_{1}, H_{P_{1}})$. Let $S$ be this maximum area; you should compute $2 \cdot S$ (it is guaranteed that $2 \cdot S$ is an integer).
+
+------  Input ------
+The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
+The first line of each test case contains a single integer $N$.
+$N$ lines follow. For each valid $i$, the $i$-th of these lines contains two space-separated integers $X_{i}$ and $H_{i}$.
+
+------  Output ------
+For each test case, print a single line containing one integer $2 \cdot S$.
+
+------  Constraints ------
+$1 ≤ T ≤ 3 \cdot 10^{5}$
+$2 ≤ N ≤ 10^{5}$
+$0 ≤ X_{1} < X_{2} < \ldots < X_{N} ≤ 2 \cdot 10^{9}$
+$1 ≤ H_{i} ≤ 10^{9}$ for each valid $i$
+the sum of $N$ over all test cases does not exceed $10^{6}$
+
+----- Sample Input 1 ------ 
+1
+
+5
+
+1 1
+
+2 2
+
+3 3
+
+4 4
+
+5 5
+----- Sample Output 1 ------ 
+27
+

@@ -1,0 +1,1 @@
+{"inputs": ["3\nW\nBW\nBWBB", "1\nBBWBBBWB", "1\nW\n", "1\nWB\n", "1\nBBWBBB\n", "1\nW\n", "1\nBW\n", "1\nBWBB\n", "3\nW\nBW\nBWBB"], "outputs": ["Chef\nAleksa\nAleksa", "Aleksa\n", "Chef\n", "Aleksa\n", "Aleksa\n", "Chef\n", "Aleksa\n", "Aleksa\n", "Chef\nAleksa\nAleksa\n"]}

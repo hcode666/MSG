@@ -1,0 +1,35 @@
+Read problems statements in [Hindi], [Mandarin Chinese],
+[Vietnamese] and [Bengali] as well.
+
+An *$N$-bonacci sequence* is an infinite sequence $F_{1}, F_{2}, \ldots$ such that for each integer $i > N$, $F_{i}$ is calculated as $f(F_{i-1}, F_{i-2}, \ldots, F_{i-N})$, where $f$ is some function. A *XOR $N$-bonacci sequence* is an $N$-bonacci sequence for which $f(F_{i-1}, F_{i-2}, \ldots, F_{i-N}) = F_{i-1} \oplus F_{i−2} \oplus \ldots \oplus F_{i−N}$, where $\oplus$ denotes the [bitwise XOR operation].
+
+Recently, Chef has found an interesting sequence $S_{1}, S_{2}, \ldots$, which is obtained from prefix XORs of a XOR $N$-bonacci sequence $F_{1}, F_{2}, \ldots$. Formally, for each positive integer $i$, $S_{i} = F_{1} \oplus F_{2} \oplus \ldots \oplus F_{i}$. You are given the first $N$ elements of the sequence $F$, which uniquely determine the entire sequence $S$.
+
+You should answer $Q$ queries. In each query, you are given an index $k$ and you should calculate $S_{k}$. It is guaranteed that in each query, $S_{k}$ does not exceed $10^{50}$.
+
+------  Input ------
+The first line of the input contains two space-separated integers $N$ and $Q$.
+The second line contains $N$ space-separated integers $F_{1}, F_{2}, \ldots, F_{N}$.
+The following $Q$ lines describe queries. Each of these lines contains a single integer $k$.
+
+------  Output ------
+For each query, print a single line containing one integer $S_{k}$.
+
+------  Constraints ------
+$1 ≤ N, Q ≤ 10^{5}$
+$0 ≤ F_{i} ≤ 10^{9}$ for each $i$ such that $1 ≤ i ≤ N$
+$1 ≤ k ≤ 10^{9}$
+
+----- Sample Input 1 ------ 
+3 4
+0 1 2
+7
+2
+5
+1000000000
+----- Sample Output 1 ------ 
+3
+1
+0
+0
+

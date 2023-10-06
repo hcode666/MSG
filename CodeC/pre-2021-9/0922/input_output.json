@@ -1,0 +1,1 @@
+{"inputs": ["3\nabcd\ndbca\ndcba"], "outputs": ["6\n1\n0"]}

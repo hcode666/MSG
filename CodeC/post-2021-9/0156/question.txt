@@ -1,0 +1,43 @@
+From an array A containing N integers, you construct a binary string S of length (N - 1) as follows. For all 1 ≤ i < N:
+If A_{i} < A_{i+1}, then S_{i} = 0.
+If A_{i} > A_{i+1}, then S_{i} = 1.
+
+Given the string S, determine the count of indices i (1 ≤ i ≤ N) such that it is possible for A_{i} to be the maximum element of the array A.
+
+------ Input Format ------ 
+
+- The first line contains a single integer T — the number of test cases. Then the test cases follow.
+- The first line of each test case contains an integer N — the size of the array A.
+- The second line of each test case contains the binary string S of length (N - 1) containing 0s and 1s only.
+
+------ Output Format ------ 
+
+For each test case, output the count of indices i (1 ≤ i ≤ N) such that it is possible for A_{i} to be the maximum element of the array A.
+
+------ Constraints ------ 
+
+$1 ≤ T ≤ 10^{5}$
+$2 ≤ N ≤ 10^{5}$
+- Sum of $N$ over all test cases does not exceed $10^{5}$.
+
+----- Sample Input 1 ------ 
+3
+2
+0
+7
+000111
+6
+11100
+
+----- Sample Output 1 ------ 
+1
+1
+2
+
+----- explanation 1 ------ 
+Test case $1$: Here $A_{1} < A_{2}$. Therefore clearly only $A_{2}$ can be the maximum element of $A$.
+
+Test case $2$: Here $A_{1} < A_{2}$, $A_{2} < A_{3}$, $A_{3} < A_{4}$, $A_{4} > A_{5}$, $A_{5} > A_{6}$ and $A_{6} > A_{7}$. Therefore, clearly only $A_{4}$ can be the maximum element of $A$.
+
+Test case $3$: Here $A_{1} > A_{2}$, $A_{2} > A_{3}$, $A_{3} > A_{4}$, $A_{4} < A_{5}$ and $A_{5} < A_{6}$. Therefore $A_{1}$ and $A_{6}$ both can be the maximum elements of $A$.
+

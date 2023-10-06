@@ -1,0 +1,1 @@
+{"inputs": ["4\nssss\nssas\nsa\ns", "1\naaaaa\n", "3\naAbAbb\nbbBBCA\ncDEdef\n", "2\nababa\nabcd", "2\nabcdefg\naaa"], "outputs": ["2\n3\n2\n1", "3\n", "4\n4\n6\n", "3\n4", "7\n2\n"]}

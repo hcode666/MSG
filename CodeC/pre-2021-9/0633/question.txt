@@ -1,0 +1,47 @@
+Read problem statements in [Hindi], [Bengali], [Mandarin Chinese], [Russian], and [Vietnamese] as well.
+
+Doraemon has a matrix with $N$ rows (numbered $1$ through $N$) and $M$ columns (numbered $1$ through $M$). Let's denote the element in row $i$ and column $j$ by $A_{i,j}$. Next, let's define a sub-row of a row $r$ as a sequence $A_{r, x}, A_{r, x+1}, \ldots, A_{r, y}$ for some $x$ and $y$ ($1 ≤ x ≤ y ≤ M$) and a sub-column of a column $c$ by $A_{x, c}, A_{x+1, c}, \ldots, A_{y, c}$ for some $x$ and $y$ ($1 ≤ x ≤ y ≤ N$).
+
+You need to find the number of pairs (sub-row of some row, sub-column of some column) with the following properties:
+1. Both sequences (the sub-row and the sub-column) have the same length.
+2. This length is odd.
+3. The central elements of both sequences are the same (they correspond to the same element of the matrix).
+4. Both sequences are palindromes.
+
+------  Input ------
+The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows.
+The first line of each test case contains two space-separated integers $N$ and $M$. 
+$N$ lines follow. For each $i$ ($1 ≤ i ≤ N$), the $i$-th of these lines contains $M$ space-separated integers $A_{i, 1}, A_{i, 2}, \ldots, A_{i, M}$.
+
+------  Output ------
+For each test case, print a single line containing one integer ― the number of valid pairs.
+
+------  Constraints ------
+$1 ≤ T ≤ 100$
+$1 ≤ N, M$
+$N \cdot M ≤ 10^{5}$
+$1 ≤ A_{i, j} ≤ 10^{6}$ for each valid $i, j$
+the sum of $N \cdot M$ over all test cases does not exceed $3 \cdot 10^{5}$
+
+------  Subtasks ------
+Subtask #1 (30 points):
+$T ≤ 10$
+$N \cdot M ≤ 10^{3}$  
+
+Subtask #2 (70 points): original constraints
+
+----- Sample Input 1 ------ 
+1
+
+3 3
+
+2 1 2
+
+1 1 1
+
+2 1 2
+----- Sample Output 1 ------ 
+10
+----- explanation 1 ------ 
+Example case 1: Each element forms a valid pair (where the sub-row and sub-column contain only this element) and the middle row and middle column also form one valid pair.
+
